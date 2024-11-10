@@ -37,7 +37,7 @@ const HowItWorks = () => {
             </div>
             <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2">
                 {steps.map((step, i) => (
-                    <div key={i} className="p-4 border-[1px] border-[#313856] rounded">
+                    <div key={i} className="p-4 border-[1px] border-[#313856] rounded hover:border-[#393f5d]">
                         <Link href={step.link}>
                             <div className="flex flex-col gap-6">
                                 <div className="bg-vector w-[46px] h-[46px] flex items-center justify-center bg-red-500 rounded-sm border-[0.54px] border-solid border-[#ffffff33]">

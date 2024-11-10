@@ -7,15 +7,15 @@ import HowItWorks from './../components/HowItWorks';
 export default function Home() {
     return (
         <div className="min-h-screen w-full flex justify-center">
-            <div className="flex flex-col w-[1061px]">
-                <div className=" h-[279px] bg-header mt-[1px] border-b-[1px] border-b-[#313856]">
-                    <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 h-full px-10">
-                        <div className="flex items-center">
+            <div className=" w-[1061px] flex flex-col mt-7">
+                <div className="bg-header mt-[1px] border-b-[1px] border-b-[#313856]">
+                    <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 h-full px-3 md:px-6 lg:px-10">
+                        <div className="py-[67px] flex items-center">
                             <div className="w-[441px] flex flex-col gap-3">
-                                <h2 className="text-[#FCFCFD] font-bold text-[24px] leading-6">
+                                <h2 className="text-[#FCFCFD] font-bold text-[35px] md:text-[30px] lg:text-[24px] leading-9 md:leading-7 lg:leading-6 ">
                                     Unlock Rewards with the Copin Referral Program
                                 </h2>
-                                <p className="text-[#C0C0C9] font-normal text-[13px] leading-6">
+                                <p className="text-[#C0C0C9] font-normal lg:text-[13px] leading-6">
                                     Earn rebates and commissions by inviting friends. Grow your network and benefit from
                                     our 6-tier reward system.
                                 </p>
@@ -27,7 +27,7 @@ export default function Home() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center ">
                             <TierChart />
                         </div>
                     </div>
@@ -35,8 +35,8 @@ export default function Home() {
                 <div className="">
                     <HowItWorks />
                 </div>
-                <div className="p-4 ">
-                    <div className="bg-[#101423] flex flex-col gap-1 py-12">
+                <div className="p-4">
+                    <div className="bg-[#101423] flex flex-col gap-1 py-16">
                         <p className="text-[#FCFCFD] font-bold text-[16px] leading-6 text-center">
                             Apply <span className="text-[#4EAEFD]">Copin Affiliate Program</span> <br />
                             to get more benefits!

@@ -35,3 +35,8 @@ body {
         #abeca2 360.06deg
     );
 }
+
+.bg-toggle {
+    background: linear-gradient(#264f95 34.54%, rgba(11, 14, 24, 0) 91.38%);
+    border: 1px solid #264f95;
+}
