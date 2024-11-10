@@ -30,12 +30,14 @@ const HowItWorks = () => {
     ];
 
     return (
-        <div className="p-4">
-            <div className="flex items-center gap-2 mb-4">
+        <div className="px-4 py-8 md:py-5 lg:py-4">
+            <div className="flex items-center gap-2 mb-6 md:mb-5 lg:mb-4">
                 <Image src="/lightbulb_filament.png" width={24} height={24} alt="Image lightbulb filament" />
-                <h3 className="text-[#FCFCFD] text-[16px] font-medium leading-6">How It Works?</h3>
+                <h3 className="text-[#FCFCFD] text-[24px] md:text-[18px] lg:text-[16px] font-medium leading-6">
+                    How It Works?
+                </h3>
             </div>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2">
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5 md:gap-3 lg:gap-2">
                 {steps.map((step, i) => (
                     <div key={i} className="p-4 border-[1px] border-[#313856] rounded hover:border-[#393f5d]">
                         <Link href={step.link}>
@@ -43,9 +45,11 @@ const HowItWorks = () => {
                                 <div className="bg-vector w-[46px] h-[46px] flex items-center justify-center bg-red-500 rounded-sm border-[0.54px] border-solid border-[#ffffff33]">
                                     <Image src={step.img} width={22.08} height={22.08} alt="Image vector" />
                                 </div>
-                                <div className="flex flex-col gap-2 ">
-                                    <h3 className="text-[16px] text-[#FCFCFD] font-medium leading-6">{step.title}</h3>
-                                    <p className="text-[#C0C0C9] font-normal text-[13px] leading-6">
+                                <div className="flex flex-col gap-4 md:gap-3 lg:gap-2">
+                                    <h3 className="text-[24px] md:text-[18px] lg:text-[16px] text-[#FCFCFD] font-medium leading-6">
+                                        {step.title}
+                                    </h3>
+                                    <p className="text-[#C0C0C9] font-normal text-[16px] lg:text-[13px] leading-6">
                                         {step.description}
                                     </p>
                                 </div>
